@@ -1,0 +1,9 @@
+@import "reset.css";
+h1 {
+  visibility: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #5B2386;
+}
