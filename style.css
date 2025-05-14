@@ -53,6 +53,7 @@ h1 {
 }
 body {
   display: flex;
+  position: relative;
   flex-direction: column;
   background-color: #5b2386;
   font-family: "Gmarket Sans TTF";
@@ -77,4 +78,19 @@ header > img {
   font-size: 1rem;
   font-weight: 300;
   color: white;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.width-limit {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header img {
+  display: block;
+  vertical-align: middle;
 }
