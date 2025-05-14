@@ -55,15 +55,10 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #5b2386;
   font-family: "Gmarket Sans TTF";
-}
-
-.yellowtext {
-  font-family: "OTEnjoystoriesBA";
-  font-size: 24px;
-  color: #f5df4d;
-  padding: 2rem;
 }
 
 .input {
@@ -73,10 +68,11 @@ body {
 }
 
 .header {
+  padding: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 564px;
   height: 265px;
   position: relative;
 }
@@ -94,4 +90,33 @@ body {
   width: 222px;
   height: 225px;
   position: absolute;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.yellowtext {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 2rem;
+  color: #f5df4d;
+  padding: 2.5rem;
+}
+
+.content-1 {
+  display: flex;
+  padding: 3rem;
+  gap: 20px;
+}
+
+.content-1-text {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300;
+  white-space: nowrap;
 }
