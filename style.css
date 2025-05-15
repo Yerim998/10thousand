@@ -238,6 +238,62 @@ img {
   display: block;
 }
 
+/*모달 구현*/
+.modal-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  aspect-ratio: 800 / 816;
+  padding: 50px;
+}
+.modal-overlay {
+  display: none;
+  /*숨기기*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.linkto {
+  font-family: "GmarketSansBold";
+  font-size: 1rem;
+  color: #5b2386;
+  background-color: #fcee21;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 508px;
+  padding: 10px;
+}
+.linkto:hover {
+  background-color: #ebdd1f;
+}
+
+.licat {
+  width: 90%;
+  max-width: 438px;
+  margin-bottom: 30px;
+}
+.modal-title {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 5rem;
+  color: #5b2386;
+  white-space: nowrap;
+}
+.modal-text {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 2rem;
+  color: #5b2386;
+  white-space: nowrap;
+}
+
 /*모바일 미디어 쿼리 시작*/
 @media (max-width: 768px) {
   body {
@@ -391,54 +447,34 @@ img {
   footer > p {
     font-size: 9px;
   }
-}
 
-/*모달 구현*/
-.modal-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.modal-overlay {
-  display: none; /*숨기기*/
-  position: fixed;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: whitesmoke;
-  border-radius: 10px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-.linkto {
-  background-color: #fcee21;
-  border-radius: 10px;
-  border-style: none;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
-  width: 508px;
-  height: 64px;
-  font-family: "GmarketSansBold";
-  font-size: 24px;
-  color: #5b2386;
-}
-.linkto:hover {
-  background-color: #ebdd1f;
-}
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; /*스크린리더용 코드를 서치함*/
+  }
 
-.licat {
-  width: 438px;
-  margin: 80px 0px 50px 0px;
-}
-.modal-main > h1 {
-  font-family: "OTEnjoystoriesBA";
-  font-size: 96px;
-  color: #5b2386;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-.modal-main > h2 {
-  font-family: "OTEnjoystoriesBA";
-  font-size: 36px;
-  color: #5b2386;
+  .linkto {
+    font-size: 1rem;
+  }
+  .linkto > span {
+    display: block;
+  }
+
+  .modal-overlay {
+    max-height: 60vh;
+  }
+
+  .modal-title {
+    font-size: 3.5rem;
+  }
+  .modal-text {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 }
