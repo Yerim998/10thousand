@@ -93,7 +93,6 @@ button {
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 300;
-  white-space: nowrap;
 }
 
 .input-box {
@@ -227,13 +226,78 @@ img {
   display: block;
 }
 
+/*모바일 미디어 쿼리 시작*/
 @media (max-width: 768px) {
+  body {
+    padding: 0 20px;
+    word-break: keep-all;
+  }
+  .header {
+    width: 90%;
+    max-width: 564px;
+    margin: 80px 0 80px 0;
+  }
+
   .main {
     width: 100%;
   }
 
-  .header {
-    width: 100%;
-    height: auto;
+  .main-content {
+    font-size: 1.5rem;
+    padding: 2rem;
   }
+
+  .contert-1 {
+    padding: 2rem;
+  }
+}
+
+/*모달 구현*/
+.modal-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.linkto {
+  background-color: #fcee21;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 508px;
+  height: 64px;
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+  color: #5b2386;
+}
+.linkto:hover {
+  background-color: #ebdd1f;
+}
+
+.licat {
+  width: 438px;
+  margin: 80px 0px 50px 0px;
+}
+.modal-main > h1 {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 96px;
+  color: #5b2386;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.modal-main > h2 {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 36px;
+  color: #5b2386;
 }
