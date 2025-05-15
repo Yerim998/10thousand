@@ -246,11 +246,19 @@ img {
   }
 
   .header {
+    position: relative;
     width: 100%;
     max-width: 564px;
     margin: 80px 0 80px 0;
   }
 
+  .header-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 278px;
+  }
   .clock-img {
     width: 129px;
     height: 130px;
@@ -319,7 +327,6 @@ img {
   .training {
     width: 203px;
     height: 46px;
-    margin-left: 20px;
     margin-right: 5px;
   }
 
@@ -327,7 +334,6 @@ img {
     width: 102px;
     height: 46px;
     margin-left: 5px;
-    margin-right: 20px;
   }
 
   .input-box {
@@ -338,10 +344,13 @@ img {
   }
 
   input {
-    width: 150px;
-    height: 38px;
+    width: 130px;
+    height: auto;
+    aspect-ratio: 156/38;
     border-radius: 10px;
     border-style: none;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   .input-box-2 > span {
@@ -351,7 +360,7 @@ img {
 
   ::placeholder {
     color: #babcbe;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: "gmarketsansmedium";
     text-align: center;
   }
@@ -364,11 +373,23 @@ img {
   .result-area {
     font-size: 0.8rem;
     margin: 50px 0px 50px 0;
+    gap: 20px;
   }
 
   .result-job,
   .result-time {
     font-size: 1.5rem;
+  }
+  footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .footer-logo {
+    width: 125px;
+    height: auto;
+  }
+  footer > p {
+    font-size: 9px;
   }
 }
 
