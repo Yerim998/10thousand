@@ -227,7 +227,7 @@ img {
 }
 
 /*모바일 미디어 쿼리 시작*/
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   body {
     padding: 0 20px;
     word-break: keep-all;
@@ -245,10 +245,32 @@ img {
   .main-content {
     font-size: 1.5rem;
     padding: 2rem;
+    white-space: nowarp;
   }
 
   .contert-1 {
     padding: 2rem;
+  }
+
+  .button-finger {
+    top: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 48px;
+  }
+
+  .main-button {
+    font-size: 0.8rem;
+    width: auto;
+    max-width: 240px;
+    height: auto;
+    padding: 20px 30px;
+    white-space: normal;
+  }
+
+  .button-text-1 {
+    display: block;
   }
 }
 
@@ -260,7 +282,7 @@ img {
   align-items: center;
 }
 .modal-overlay {
-  display: none;
+  display: none; /*숨기기*/
   position: fixed;
   top: 15%;
   left: 50%;
