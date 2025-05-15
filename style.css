@@ -79,6 +79,7 @@ button {
   font-size: 2rem;
   color: #f5df4d;
   padding: 2.5rem;
+  white-space: nowrap;
 }
 
 .content-1 {
@@ -244,8 +245,7 @@ img {
 
   .main-content {
     font-size: 1.5rem;
-    padding: 2rem;
-    white-space: nowarp;
+    padding: 3rem;
   }
 
   .contert-1 {
