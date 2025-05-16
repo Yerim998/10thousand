@@ -244,18 +244,20 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 30%;
+  max-width: 50%;
   aspect-ratio: 800 / 816;
-  padding: 30px;
+  padding: 80px;
 }
 .modal-overlay {
   display: none;
   /*숨기기*/
+  margin: 0;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: whitesmoke;
+  border-style: none;
   border-radius: 10px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -281,19 +283,19 @@ img {
 }
 
 .licat {
-  width: 90%;
+  width: 80%;
   max-width: 438px;
-  margin-bottom: 30px;
+  margin: 40px 0;
 }
 .modal-title {
   font-family: "OTEnjoystoriesBA";
-  font-size: 3rem;
+  font-size: 96px;
   color: #5b2386;
   white-space: nowrap;
 }
 .modal-text {
   font-family: "OTEnjoystoriesBA";
-  font-size: 1.5rem;
+  font-size: 36px;
   color: #5b2386;
   white-space: nowrap;
 }
@@ -337,6 +339,7 @@ img {
     align-items: center;
     gap: 0;
     width: 100%;
+    padding: 0 15px;
   }
 
   .content-1 > img {
@@ -398,7 +401,7 @@ img {
 
   .input-box {
     font-size: 0.8rem;
-    padding: 2rem;
+    padding: 54px 0px 80px 0px;
     gap: 0;
     margin: 0px 20px 0px 20px;
   }
@@ -432,7 +435,7 @@ img {
 
   .result-area {
     font-size: 0.8rem;
-    margin: 50px 0px 50px 0;
+    margin: 68px 0px 52px 0;
     gap: 20px;
   }
 
@@ -468,12 +471,19 @@ img {
   }
 
   .modal-overlay {
-    min-width: 80vw;
+    max-width: 330px;
     max-height: 60vh;
+    padding: 40px;
   }
 
+  .licat {
+    margin: 24px 0;
+  }
+
+  .modal-title {
+    font-size: 40px;
+  }
   .modal-text {
-    font-size: 1.5rem;
     line-height: 1.5;
   }
 }
