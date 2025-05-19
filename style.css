@@ -249,7 +249,7 @@ img {
   padding: 80px;
 }
 .modal-overlay {
-  /* display: none; */
+  display: none;
   /*숨기기*/
   margin: 0;
   position: fixed;
