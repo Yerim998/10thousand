@@ -37,5 +37,4 @@
             placeholder="예) 프로그래밍" />전문가가 될 것이다.
       </p>
   ```
-  3. **반응형 디자인**
-  -![Markdown Image](asset/images/test_image.jpg "Tooltip Message")
+3. **반응형
